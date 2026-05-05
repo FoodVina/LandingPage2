@@ -14,7 +14,7 @@ export default function HomePage() {
     <div>
       <div className="container mx-auto px-4">
         <HeroSection />
-        <Button onClick={()=>
+        <Button className="" onClick={()=>
           {
             location.href='https://example.com'
           }
@@ -22,10 +22,9 @@ export default function HomePage() {
         <Link href="/some-page" className="ml-4">
           Some Page
         </Link>
-        <AnimatedThemeToggler className="cursor-pointer" />
 
       </div>
-      <AnimatedNavbar />
+      {/* <AnimatedNavbar /> */}
     </div>
   );
 }
