@@ -1,0 +1,43 @@
+{
+  "hello": "Chào thế giới",
+  "welcome": "Chào mừng đến với trang của tôi",
+  "header": {
+    "home": "Trang chủ",
+    "gallery": "Thư viện",
+    "shop": "Mua sắm",
+    "about": "Giới thiệu",
+    "pricing": "Bảng giá",
+    "signin": "Đăng nhập",
+    "signup": "Đăng ký",
+    "contact": "Liên hệ",
+    "generator": "Mô phỏng"
+  },
+  "footer": {
+    "description": "Tận dụng công nghệ AI để thiết kế không gian hoàn hảo.<desktopBr/>Tạo nên không gian mơ ước với mô phỏng nội thất chân thực.",
+    "service": {
+      "title": "Dịch vụ",
+      "item1": "Mô phỏng nội thất",
+      "item2": "Phòng trưng bày",
+      "item3": "Bản mẫu",
+      "item4": "Công cụ AI"
+    },
+    "support": {
+      "title": "Hỗ trợ",
+      "item1": "Giúp đỡ",
+      "item2": "Hướng dẫn sử dụng",
+      "item3": "Những câu hỏi thường gặp",
+      "item4": "Liên hệ với chúng tôi"
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "item1": "support@sofarsogood.ai",
+      "item2": "+82 2-1234-5678",
+      "item3": "Teheran-ro, 456th Floor, Gangnam-gu, Seoul"
+    },
+    "bottom": {
+      "item1": "SOFARSOGOOD. Đã đăng ký bản quyền.",
+      "item2": "Chính sách bảo mật",
+      "item3": "Điều khoản sử dụng"
+    }
+  }
+}

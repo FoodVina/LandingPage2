@@ -1,0 +1,43 @@
+{
+  "hello": "Hello world",
+  "welcome": "Welcome to my site",
+  "header": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "shop": "Shop",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "signin": "Sign In",
+    "signup": "Sign Up",
+    "generator": "Generator"
+  },
+  "footer": {
+    "description": "Leverage AI technology to design the perfect space.<desktopBr/>Create your dream space with realistic interior simulation.",
+    "service": {
+      "title": "Services",
+      "item1": "Interior simulation",
+      "item2": "Showroom",
+      "item3": "Templates",
+      "item4": "AI tools"
+    },
+    "support": {
+      "title": "Support",
+      "item1": "Help",
+      "item2": "User guide",
+      "item3": "Frequently asked questions",
+      "item4": "Contact us"
+    },
+    "contact": {
+      "title": "Contacts",
+      "item1": "support@sofarsogood.ai",
+      "item2": "+82 2-1234-5678",
+      "item3": "Teheran-ro, 456th Floor, Gangnam-gu, Seoul"
+    },
+    "bottom": {
+      "item1": "SOFARSOGOOD. All rights reserved.",
+      "item2": "Privacy Policies",
+      "item3": "Usage terms"
+    }
+  }
+}
