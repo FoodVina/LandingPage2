@@ -1,12 +1,19 @@
 import { ReactNode } from "react";
 import { Metadata } from "next";
-import { Be_Vietnam_Pro } from "next/font/google";
+import { Be_Vietnam_Pro, Noto_Serif } from "next/font/google";
 import { getMessages } from "@/i18n/getMessages";
 import { Locale, locales, defaultLocale } from "@/i18n/config";
 import { I18nProvider } from "@/i18n/I18nProvider";
 import "@/app/globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+
+const notoSerif = Noto_Serif({
+  subsets: ["latin", "vietnamese"],
+  weight: ["400", "700"],
+  variable: "--font-noto-serif",
+  display: "swap",
+});
 
 // Config font Be Vietnam Pro
 const beVietnamPro = Be_Vietnam_Pro({
@@ -109,7 +116,7 @@ export default async function MainLayout({
   return (
     <html
       lang={validLocale}
-      className={`${beVietnamPro.variable} scroll-smooth`}
+      className={`${beVietnamPro.variable} ${notoSerif.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <head>

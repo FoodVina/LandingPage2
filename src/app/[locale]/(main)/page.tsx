@@ -1,28 +1,19 @@
 "use client";
 
-import { HeroSection } from "@/components/sections/HeroSection";
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import { AnimatedNavbar } from "@/components/ui/animated-navbar";
 import { useT } from "@/i18n/I18nProvider";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { HomeSection } from "@/components/sections/HomeSection";
 
 export default function HomePage() {
   const t = useT();
 
   return (
     <div>
-      <div className="container mx-auto px-4">
-        <HeroSection />
-        <Button className="" onClick={()=>
-          {
-            location.href='https://example.com'
-          }
-        }>a</Button>
-        <Link href="/some-page" className="ml-4">
-          Some Page
-        </Link>
-
+      <div className="w-full">
+        <HomeSection />
       </div>
       <AnimatedNavbar />
     </div>

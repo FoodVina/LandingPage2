@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { AnimatedThemeToggler } from "./animated-theme-toggler";
 
 const PILL_HEIGHT = 58;
 const LOGO_SIZE = 58;
@@ -223,6 +224,8 @@ export const AnimatedNavbar = ({ className }: { className?: string }) => {
             >
               <Image src="/logo/logo-dy-food-white.png" alt="logo" width={130} height={18} />
             </Link>
+            <AnimatedThemeToggler className="cursor-pointer" />
+
           </div>
         </motion.div>
       </div>
