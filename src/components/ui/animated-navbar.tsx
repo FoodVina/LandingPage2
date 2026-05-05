@@ -18,22 +18,20 @@ const EASE_OUT_QUART = [0.25, 1, 0.5, 1] as const;
 
 // Simple hamburger using flex — avoids absolute positioning issues on Android Chrome
 const MenuIcon = ({ open }: { open: boolean }) => (
-  <div className="flex flex-col justify-center gap-[5px] w-5 h-5 shrink-0">
-    <motion.span
-      animate={{ rotate: open ? 45 : 0, y: open ? 10 : 0 }}
-      transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
-      className="block h-0.5 w-full rounded-full bg-current origin-center"
-    />
-    <motion.span
-      animate={{ opacity: open ? 0 : 1, scaleX: open ? 0 : 1 }}
-      transition={{ duration: 0.2 }}
-      className="block h-0.5 w-full rounded-full bg-current origin-center"
-    />
-    <motion.span
-      animate={{ rotate: open ? -45 : 0, y: open ? -10 : 0 }}
-      transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
-      className="block h-0.5 w-full rounded-full bg-current origin-center"
-    />
+  <div className="relative grid size-4 cursor-pointer items-center justify-center">
+    <motion.div
+      animate={{ y: open ? 0 : "-5px", rotate: open ? 45 : 0 }}
+      className="absolute h-0.5 w-full rounded-full bg-current"
+    ></motion.div>
+    <motion.div
+      animate={{ opacity: open ? 0 : 1 }}
+      transition={{ duration: 0.1 }}
+      className="absolute h-0.5 w-full rounded-full bg-current"
+    ></motion.div>
+    <motion.div
+      animate={{ y: open ? 0 : "5px", rotate: open ? -45 : 0 }}
+      className="absolute h-0.5 w-full rounded-full bg-current"
+    ></motion.div>
   </div>
 );
 
@@ -210,11 +208,11 @@ export const AnimatedNavbar = ({ className }: { className?: string }) => {
           >
             <button
               onClick={() => setOpen((v) => !v)}
-              className="flex items-center gap-3 text-foreground"
+              className="cursor-pointer flex items-center gap-3 text-foreground"
               aria-label="Toggle menu"
             >
               <MenuIcon open={open} />
-              <span className="select-none font-medium" style={{ fontSize: 18 }}>Menu</span>
+              <span className="font-medium" style={{ fontSize: 18 }}>Menu</span>
             </button>
 
             <Link
@@ -223,7 +221,7 @@ export const AnimatedNavbar = ({ className }: { className?: string }) => {
               className="flex items-center justify-center rounded-full bg-primary px-6 font-semibold text-primary-foreground shrink-0"
               style={{ height: 42 }}
             >
-              <Image src="/logo/logo-dy-food-white.png" alt="logo" width={45} height={18} />
+              <Image src="/logo/logo-dy-food-white.png" alt="logo" width={130} height={18} />
             </Link>
           </div>
         </motion.div>

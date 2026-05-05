@@ -24,7 +24,7 @@ export default function HomePage() {
         </Link>
 
       </div>
-      {/* <AnimatedNavbar /> */}
+      <AnimatedNavbar />
     </div>
   );
 }
