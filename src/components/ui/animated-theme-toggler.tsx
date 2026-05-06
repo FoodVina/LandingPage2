@@ -28,6 +28,7 @@ interface AnimatedThemeTogglerProps extends React.ComponentPropsWithoutRef<"butt
   duration?: number
   variant?: TransitionVariant
   fromCenter?: boolean
+  defaultTheme?: Theme
 }
 
 function polygonCollapsed(cx: number, cy: number, vertexCount: number): string {
@@ -135,19 +136,18 @@ export const AnimatedThemeToggler = ({
   duration = 400,
   variant,
   fromCenter = false,
+  defaultTheme = "system",
   ...props
 }: AnimatedThemeTogglerProps) => {
   const shape = variant ?? "circle"
-  const [theme, setTheme] = useState<Theme>("system")
+  const [theme, setTheme] = useState<Theme>(defaultTheme)
   const buttonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     const stored = localStorage.getItem("theme") as Theme | null
-    if (stored === "dark" || stored === "light") {
-      setTheme(stored)
-    } else {
-      setTheme("system")
-    }
+    const resolved = (stored === "dark" || stored === "light") ? stored : defaultTheme
+    setTheme(resolved)
+    applyThemeToDOM(resolved)
   }, [])
 
   const cycleTheme = useCallback(() => {

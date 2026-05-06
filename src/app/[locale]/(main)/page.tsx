@@ -15,7 +15,7 @@ export default function HomePage() {
       <div className="w-full">
         <HomeSection />
       </div>
-      <AnimatedNavbar />
+      
     </div>
   );
 }

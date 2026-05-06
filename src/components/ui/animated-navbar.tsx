@@ -224,8 +224,7 @@ export const AnimatedNavbar = ({ className }: { className?: string }) => {
             >
               <Image src="/logo/logo-dy-food-white.png" alt="logo" width={130} height={18} />
             </Link>
-            <AnimatedThemeToggler className="cursor-pointer" />
-
+            {/* <AnimatedThemeToggler className="cursor-pointer" /> */}
           </div>
         </motion.div>
       </div>

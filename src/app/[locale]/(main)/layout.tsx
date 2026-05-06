@@ -7,6 +7,7 @@ import { I18nProvider } from "@/i18n/I18nProvider";
 import "@/app/globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { AnimatedNavbar } from "@/components/ui/animated-navbar";
 
 const notoSerif = Noto_Serif({
   subsets: ["latin", "vietnamese"],
@@ -164,7 +165,8 @@ export default async function MainLayout({
             <div className="flex-1">
               {children}
             </div>
-            {/* <Footer /> */}
+            <AnimatedNavbar />
+            <Footer />
           </main>
         </I18nProvider>
 

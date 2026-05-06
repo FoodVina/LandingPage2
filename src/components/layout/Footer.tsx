@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import { Mail, Phone, MapPin, } from 'lucide-react';
+import { Mail, Phone, MapPin, Earth, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../ui/button';
@@ -10,146 +10,70 @@ import { useT } from '@/i18n/I18nProvider';
 export function Footer() {
     const t = useT();
     return (
-        <footer className="bg-gray-50 py-16">
-            <div className="container mx-auto px-4">
-                {/* Main content */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2 mb-16">
-                    {/* Logo and description */}
-                    <div className="md:col-span-1 lg:col-span-2 flex flex-col space-y-6">
-                        <Link href="/" className="text-xl font-bold text-gray-400">
-                            <Image src={"/logo.svg"} alt="Logo" width={120} height={40} />
-                        </Link>
-                        <p className="text-gray-600 text-sm leading-relaxed mb-8">
-                            {t("footer.description", "common")}
+        <footer className='w-full bg-[#001A0C] h-[832px]'>
+            <div className='container mx-auto px-4 py-30 h-full flex flex-col justify-between'>
+                <div className='grid grid-cols-4 gap-12 font-medium text-sm'>
+                    <div className='flex flex-col gap-6'>
+                        <Image src={`/logo/logo-footer-white.png`} alt='Logo' width={170} height={50} />
+                        <p className='text-[#D8D8D8] opacity-60'>
+                            FOOD VINA giải quyết mọi vấn đề của suất ăn hiện tại và tạo ra những thành quả đặc biệt khác biệt.
                         </p>
-
-                        {/* Social icons */}
-                        <div className="flex space-x-4">
-                            <a href="#" >
-                                <Button variant={"ghost"} size={"icon"} className="p-0">
-                                    {/* <Facebook size={20} /> */}
-                                </Button>
-                            </a>
-                            <a href="#" >
-                                <Button variant={"ghost"} size={"icon"} className="p-0">
-                                    {/* <Instagram size={20} /> */}
-                                </Button>
-                            </a>
-                            <a href="#" >
-                                <Button variant={"ghost"} size={"icon"} className="p-0">
-                                    {/* <Twitter size={20} /> */}
-                                </Button>
-                            </a>
-                            <a href="#" >
-                                <Button variant={"ghost"} size={"icon"} className="p-0">
-                                    {/* <Youtube size={20} /> */}
-                                </Button>
-                            </a>
+                        <div className='flex gap-4'>
+                            <Link href={`/`} className='rounded-full w-8 h-8 border border-[#F4F4F4]/10 flex justify-center items-center'>
+                                <Earth className='w-[11px] h-[11px] text-[#F4F4F4]' />
+                            </Link>
+                            <Link href={`/`} className='rounded-full w-8 h-8 border border-[#F4F4F4]/10 flex justify-center items-center'>
+                                <Mail className='w-[11px] h-[11px] text-[#F4F4F4]' />
+                            </Link>
+                            <Link href={`/`} className='rounded-full w-8 h-8 border border-[#F4F4F4]/10 flex justify-center items-center'>
+                                <Phone className='w-[11px] h-[11px] text-[#F4F4F4]' />
+                            </Link>
                         </div>
                     </div>
-
-                    {/* Services column */}
-                    <div className='mb-6 md:mb-0'>
-                        <h3 className="font-bold text-black mb-4">
-                            {t("footer.service.title", "common")}
-                        </h3>
-                        <ul className="space-y-2">
-                            <li>
-                                <a href="#" className="text-gray-600 hover:text-black transition-colors text-sm">
-                                    {t("footer.service.item1", "common")}                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-600 hover:text-black transition-colors text-sm">
-                                    {t("footer.service.item2", "common")}
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-600 hover:text-black transition-colors text-sm">
-                                    {t("footer.service.item3", "common")}
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-600 hover:text-black transition-colors text-sm">
-                                    {t("footer.service.item4", "common")}
-                                </a>
-                            </li>
-                        </ul>
+                    <div className='flex flex-col gap-6'>
+                        <h2 className='font-bold'>VỀ CHÚNG TÔI</h2>
+                        <div className='flex flex-col gap-4'>
+                            <p>Giới thiệu công ty</p>
+                            <p>Dịch vụ mà chúng tôi cung cấp</p>
+                        </div>
                     </div>
-
-                    {/* Support column */}
-                    <div className='mb-6 md:mb-0'>
-                        <h3 className="font-semibold text-black mb-4">
-                            {t("footer.support.title", "common")}
-                        </h3>
-                        <ul className="space-y-2">
-                            <li>
-                                <a href="#" className="text-gray-600 hover:text-black transition-colors text-sm">
-                                    {t("footer.support.item1", "common")}
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-600 hover:text-black transition-colors text-sm">
-                                    {t("footer.support.item2", "common")}
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-600 hover:text-black transition-colors text-sm">
-                                    {t("footer.support.item3", "common")}
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-600 hover:text-black transition-colors text-sm">
-                                    {t("footer.support.item4", "common")}
-                                </a>
-                            </li>
-                        </ul>
+                    <div className='flex flex-col gap-6'>
+                        <h2 className='font-bold'>DỊCH VỤ</h2>
+                        <div className='flex flex-col gap-4'>
+                            <p>Dịch vụ suất ăn công nghiệp</p>
+                            <p>Dịch vụ canteen</p>
+                            <p>Dịch vụ máy bán hàng tự động</p>
+                            <p>Cung cấp nguyên liệu thực phẩm</p>
+                        </div>
                     </div>
-
-                    {/* Contact column */}
-                    <div className='mb-6 md:mb-0'>
-                        <h3 className="font-semibold text-black mb-4">
-                            {t("footer.contact.title", "common")}
-                        </h3>
-                        <div className="space-y-2">
-                            <div className="flex items-center space-x-3">
-                                <Mail size={16} className="text-gray-500" />
-                                <a href="mailto:support@sofarsogood.ai" className="text-gray-600 hover:text-black transition-colors text-sm">
-                                    {t("footer.contact.item1", "common")}
-                                </a>
-                            </div>
-                            <div className="flex items-center space-x-3">
-                                <Phone size={16} className="text-gray-500" />
-                                <a href="tel:+82-2-1234-5678" className="text-gray-600 hover:text-black transition-colors text-sm">
-                                    {t("footer.contact.item2", "common")}
-                                </a>
-                            </div>
-                            <div className="flex items-start space-x-3">
-                                <MapPin size={16} className="text-gray-500 mt-0.5" />
-                                <span className="text-gray-600 text-sm">
-                                    {t("footer.contact.item3", "common")}
-                                </span>
-                            </div>
+                    <div className='flex flex-col gap-6'>
+                        <h2 className='font-bold'>THÔNG TIN LIÊN HỆ</h2>
+                        <div className='flex flex-col gap-4'>
+                            <p>Hữu Bằng, Tam Hợp, Bình Xuyên, Vĩnh Phúc</p>
+                            <p>dyfoodvina@gmail.com</p>
+                            <p>0211 3535 009</p>
+                        </div>
+                        <p className='opacity-60'>Liên lạc với chúng tôi để được cung cấp thêm thông tin</p>
+                        <div className='flex items-center w-full border-b border-[#F4F4F4]/20 pb-2'>
+                            <input
+                                type="email"
+                                placeholder='Email address'
+                                className='flex-1 bg-transparent outline-none focus:outline-none'
+                            />
+                            <ChevronRight className='text-secondary shrink-0' />
                         </div>
                     </div>
                 </div>
-
-                {/* Bottom section */}
-                <div className="border-t border-gray-200 pt-8">
-                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <p className="text-gray-500 text-sm">
-                            © {new Date().getFullYear()} {t("footer.bottom.item1", "common")}
-                        </p>
-                        <div className="flex space-x-6">
-                            <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors text-sm">
-                                {t("footer.bottom.item2", "common")}
-                            </a>
-                            <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors text-sm">
-                                {t("footer.bottom.item3", "common")}
-                            </a>
-                        </div>
+                <div className='flex justify-between w-full pt-8 border-t border-foreground/10 text-[#D8D8D8] font-bold opacity-50'>
+                    <div className='text-xs'>
+                        COPYRIGHT @{new Date().getFullYear()} FOOD VINA
+                    </div>
+                    <div className='text-xs'>
+                        POWERED BY FOOD VINA
                     </div>
                 </div>
             </div>
+
         </footer>
     );
 };
