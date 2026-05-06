@@ -140,8 +140,8 @@ export function HomeSection() {
             </div>
 
             {/* Service */}
-            <SlideUpSection zIndex={10} className="bg-background">
-                <div className="container mx-auto px-4 flex flex-col gap-16 h-full justify-center">
+            <SlideUpSection zIndex={10} className="bg-background ">
+                <div className="container mx-auto px-4 flex flex-col gap-16 h-dvh justify-center">
                     <div className="flex flex-col gap-2">
                         <p className="font-bold text-sm text-secondary">DỊCH VỤ</p>
                         <h2 className="w-lg font-(family-name:--font-noto-serif) text-[40px]">

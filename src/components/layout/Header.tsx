@@ -100,7 +100,7 @@ export function Header() {
                                 </Link>
                             ))}
                         </div>
-                        <AnimatedThemeToggler className="cursor-pointer" />
+                        <AnimatedThemeToggler className="cursor-pointer" defaultTheme="dark" />
 
 
                         {/* Desktop Right side - Auth & Language */}

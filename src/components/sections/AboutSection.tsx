@@ -67,7 +67,7 @@ export const AboutSection = () => {
                     </div>
                     <div className="container mx-auto px-4 relative z-1 grid grid-cols-2 h-full ">
                         <div className="h-full flex items-end py-16">
-                            <h2 className="font-(family-name:--font-noto-serif) text-[40px]">Tầm nhìn</h2>
+                            <h2 className="font-(family-name:--font-noto-serif) text-[67px]">Tầm nhìn</h2>
                         </div>
                         <div className="p-16 flex flex-col gap-8">
                             <h2 className="font-(family-name:--font-noto-serif) text-[40px]">Nhà lãnh đạo giải pháp suất ăn công nghiệp tại Việt Nam</h2>
@@ -91,7 +91,7 @@ export const AboutSection = () => {
                             </p>
                         </div>
                         <div className="h-full flex items-end p-16 ">
-                            <h2 className="font-(family-name:--font-noto-serif) text-[40px]">Mục tiêu</h2>
+                            <h2 className="font-(family-name:--font-noto-serif) text-[67px]">Mục tiêu</h2>
                         </div>
 
                     </div>
@@ -113,7 +113,7 @@ export const AboutSection = () => {
                             <h2 className="font-(family-name:--font-noto-serif) text-[40px]">Giá trị</h2>
                         </div>
                         <div className="p-16 flex flex-col gap-8">
-                            <h2 className="font-(family-name:--font-noto-serif) text-[40px]">Hương vị và chất lượng tốt hơn, Sức khỏe và Hạnh phúc, Thách thức và Đổi mới, Cùng nhau phát triển.</h2>
+                            <h2 className="font-(family-name:--font-noto-serif) text-[67px]">Hương vị và chất lượng tốt hơn, Sức khỏe và Hạnh phúc, Thách thức và Đổi mới, Cùng nhau phát triển.</h2>
                         </div>
                     </div>
                 </div>
