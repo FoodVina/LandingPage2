@@ -166,7 +166,7 @@ export default async function MainLayout({
               {children}
             </div>
             <AnimatedNavbar />
-            
+            <Footer />
           </main>
         </I18nProvider>
 
