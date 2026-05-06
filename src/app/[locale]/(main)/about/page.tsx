@@ -1,5 +1,6 @@
 import { createServerTranslator } from "@/i18n/serverUtils";
 import { Locale } from "@/i18n/config";
+import { AboutSection } from "@/components/sections/AboutSection";
 
 export default async function AboutPage({
     params
@@ -10,11 +11,10 @@ export default async function AboutPage({
 
     return (
         <div>
-            <div className="container mx-auto px-4">
-                This is about page
-                <p>{t("hello", "common")}</p>
-                <p>{t("welcome", "common")}</p>
+            <div className="w-full">
+                <AboutSection />
             </div>
+
         </div>
     );
 }
