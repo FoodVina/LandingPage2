@@ -7,6 +7,7 @@ import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { Button } from "../ui/button";
 import ScrollVelocity from "../ui/scroll-velocity";
+import { SlideUpSection } from "../layout/SlideUpSection";
 
 const services = [
     {
@@ -41,36 +42,6 @@ const brands = [
     "brand3.png",
     "brand4.png",
 ]
-
-function SlideUpSection({
-    children,
-    className,
-    zIndex,
-}: {
-    children: React.ReactNode;
-    className?: string;
-    zIndex: number;
-}) {
-    const ref = useRef<HTMLDivElement>(null);
-
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["start end", "start start"],
-    });
-
-    const spring = useSpring(scrollYProgress, { stiffness: 60, damping: 18, restDelta: 0.0005 });
-    const y = useTransform(spring, [0, 1], ["8%", "0%"]);
-
-    return (
-        <motion.div
-            ref={ref}
-            style={{ y, zIndex }}
-            className={cn("relative w-full h-dvh", className)}
-        >
-            {children}
-        </motion.div>
-    );
-}
 
 function ServiceCards({ services }: { services: { key: string; title: string; description: string; picture: string }[] }) {
     const [active, setActive] = useState<number | null>(null);

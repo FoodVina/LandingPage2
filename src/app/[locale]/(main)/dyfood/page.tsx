@@ -1,9 +1,9 @@
 import { createServerTranslator } from "@/i18n/serverUtils";
 import { Locale } from "@/i18n/config";
 import { HomeSection } from "@/components/sections/HomeSection";
-import { Footer } from "@/components/layout/Footer";
+import { DyFoodSection } from "@/components/sections/DyFoodSection";
 
-export default async function HomePage({
+export default async function DyFoodPage({
   params
 }: {
   params: { locale: Locale }
@@ -13,9 +13,8 @@ export default async function HomePage({
   return (
     <div>
       <div className="w-full">
-        <HomeSection />
+        <DyFoodSection />
       </div>
-      <Footer />
     </div>
   );
 }

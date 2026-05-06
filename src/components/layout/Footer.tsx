@@ -10,12 +10,12 @@ import { useT } from '@/i18n/I18nProvider';
 export function Footer() {
     const t = useT();
     return (
-        <footer className='w-full bg-[#001A0C] h-[832px]'>
+        <footer className='w-full bg-[#001A0C] h-dvh'>
             <div className='container mx-auto px-4 py-30 h-full flex flex-col justify-between'>
                 <div className='grid grid-cols-4 gap-12 font-medium text-sm'>
                     <div className='flex flex-col gap-6'>
                         <Image src={`/logo/logo-footer-white.png`} alt='Logo' width={170} height={50} />
-                        <p className='text-[#D8D8D8] opacity-60'>
+                        <p className='text-muted-foreground opacity-60'>
                             FOOD VINA giải quyết mọi vấn đề của suất ăn hiện tại và tạo ra những thành quả đặc biệt khác biệt.
                         </p>
                         <div className='flex gap-4'>
@@ -64,7 +64,7 @@ export function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-between w-full pt-8 border-t border-foreground/10 text-[#D8D8D8] font-bold opacity-50'>
+                <div className='flex justify-between w-full pt-8 border-t border-foreground/10 text-muted-foreground font-bold opacity-50'>
                     <div className='text-xs'>
                         COPYRIGHT @{new Date().getFullYear()} FOOD VINA
                     </div>

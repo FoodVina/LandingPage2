@@ -37,10 +37,10 @@ const MenuIcon = ({ open }: { open: boolean }) => (
 );
 
 const PRIMARY_LINKS = [
-  { label: "Về chúng tôi", href: "/" },
-  { label: "Dịch vụ", href: "/" },
-  { label: "Tin tức", href: "/" },
-  { label: "Contact", href: "/" },
+  { label: "Về chúng tôi", href: "/about" },
+  { label: "Dịch vụ", href: "/dyfood" },
+  { label: "Tin tức", href: "/news" },
+  { label: "Contact", href: "/contact" },
 ];
 
 function calcSizes(vw: number) {
@@ -217,7 +217,7 @@ export const AnimatedNavbar = ({ className }: { className?: string }) => {
             </button>
 
             <Link
-              href="/contact"
+              href="/dyfood"
               onClick={() => setOpen(false)}
               className="flex items-center justify-center rounded-full bg-primary px-6 font-semibold text-primary-foreground shrink-0"
               style={{ height: 42 }}
