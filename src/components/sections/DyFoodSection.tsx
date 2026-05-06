@@ -59,13 +59,71 @@ export const DyFoodSection = () => {
             </StickyCard>
 
             {/* Section 2 */}
-            <StickyCard i={1} className="bg-blue-300">
-                <div className="container mx-auto px-4 " >
-                    a
+            <StickyCard i={1} className="h-full bg-background py-30 flex flex-col gap-16">
+                <div className="container mx-auto px-4 flex flex-col gap-16 items-center" >
+                    <div className="flex flex-col gap-2 text-center w-2xl">
+                        <p className="font-bold text-sm text-primary ">PART OF SOMETHING BIGGER</p>
+                        <h2 className="font-(family-name:--font-noto-serif) pb-4 text-[40px]">
+                            DY FOOD & FOOD VINA <br />
+                            A Partnership Built on Trust
+                        </h2>
+                        <p className="pb-16">Từ năm 2024, DY FOOD đã trở thành một phần trong gia đình của FOOD VINA. DY FOOD vẫn giữ nguyên bản sắc thương hiệu Việt Nam và văn hóa đội ngũ riêng biệt của mình, đồng thời ngày càng phát triển mạnh mẽ hơn nhờ sự hậu thuẫn vững chắc từ tập đoàn FOOD VINA.</p>
+                    </div>
                 </div>
+                <div className="flex justify-center">
+                    <Image src={`/images/dyfoodpage/puzzle.png`} alt="puzzle" width={636} height={636} />
+                </div>
+                <div className="pt-4 pb-16 flex flex-col items-center">
+                    <p className="w-2xl text-center text-[#E5E2E1]">
+                        Sự hợp tác này mang đến cho khách hàng nguồn lực phong phú hơn, năng lực dịch vụ rộng lớn hơn và sự tin tưởng từ một tập đoàn vững mạnh.
+                        <br />
+                        <br />
+                        Chúng tôi là DY FOOD. Và chúng tôi mạnh mẽ hơn khi cùng nhau.
+                    </p>
+                </div>
+                <div className="flex flex-col gap-2 items-center">
+                    <p className="font-bold text-sm text-primary">CUNG CẤP CÁC DỊCH VỤ</p>
+                    <h2 className="font-(family-name:--font-noto-serif) text-[40px] w-2xl text-center">Giải pháp suất ăn & catering cao cấp, đậm hồn Việt</h2>
+                </div>
+                <div className="grid grid-cols-5 gap-4 container mx-auto px-4">
+                    <div className="group relative flex items-end p-6 h-[450px] col-span-3 rounded-[8px] overflow-hidden">
+                        <div className="absolute inset-0 bg-no-repeat bg-center bg-cover transition-transform duration-500 ease-in-out group-hover:scale-110" style={{ backgroundImage: "url('/images/dyfoodpage/service1.png')" }} />
+                        <div className="absolute inset-0 bg-background/50 group-hover:bg-background/0 transition-colors duration-500 ease-in-out" />
+                        <div className="relative flex flex-col gap-4 pb-4">
+                            <p className="text-xl">Suất ăn doanh nghiệp</p>
+                            <p>Nguyên liệu chọn lọc, thực đơn tinh tế</p>
+                        </div>
+                    </div>
+                    <div className="group relative flex items-end p-6 h-[450px] col-span-2 rounded-[8px] overflow-hidden">
+                        <div className="absolute inset-0 bg-no-repeat bg-center bg-cover transition-transform duration-500 ease-in-out group-hover:scale-110" style={{ backgroundImage: "url('/images/dyfoodpage/service2.png')" }} />
+                        <div className="absolute inset-0 bg-background/50 group-hover:bg-background/0 transition-colors duration-500 ease-in-out" />
+                        <div className="relative flex flex-col gap-4 pb-4">
+                            <p className="text-xl">Suất ăn doanh nghiệp</p>
+                            <p>Nguyên liệu chọn lọc, thực đơn tinh tế</p>
+                        </div>
+                    </div>
+                    <div className="group relative flex items-end p-6 h-[450px] col-span-2 rounded-[8px] overflow-hidden">
+                        <div className="absolute inset-0 bg-no-repeat bg-center bg-cover transition-transform duration-500 ease-in-out group-hover:scale-110" style={{ backgroundImage: "url('/images/dyfoodpage/service3.png')" }} />
+                        <div className="absolute inset-0 bg-background/50 group-hover:bg-background/0 transition-colors duration-500 ease-in-out" />
+                        <div className="relative flex flex-col gap-4 pb-4">
+                            <p className="text-xl">Suất ăn doanh nghiệp</p>
+                            <p>Nguyên liệu chọn lọc, thực đơn tinh tế</p>
+                        </div>
+                    </div>
+                    <div className="group relative flex items-end p-6 h-[450px] col-span-3 rounded-[8px] overflow-hidden">
+                        <div className="absolute inset-0 bg-no-repeat bg-center bg-cover transition-transform duration-500 ease-in-out group-hover:scale-110" style={{ backgroundImage: "url('/images/dyfoodpage/service4.png')" }} />
+                        <div className="absolute inset-0 bg-background/50 group-hover:bg-background/0 transition-colors duration-500 ease-in-out" />
+                        <div className="relative flex flex-col gap-4 pb-4">
+                            <p className="text-xl">Suất ăn doanh nghiệp</p>
+                            <p>Nguyên liệu chọn lọc, thực đơn tinh tế</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-dvh">
 
+                </div>
             </StickyCard>
-            <StickyCard i={2} className="bg-red-200 h-[200dvh]" tall >
+            {/* <StickyCard i={2} className="bg-red-200 h-[200dvh]" tall >
                 <div className="container mx-auto px-4 h-dvh bg-yellow-300" >
                     a
                 </div>
@@ -73,7 +131,7 @@ export const DyFoodSection = () => {
                     a
                 </div>
 
-            </StickyCard>
+            </StickyCard> */}
             {/* <StickyCard i={3} className="bg-white" >
                 <Footer />
             </StickyCard> */}
