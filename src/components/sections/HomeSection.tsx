@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { Button } from "../ui/button";
-import ScrollVelocity from "../ui/scroll-velocity";
+import { Marquee, MarqueeContent, MarqueeEdge, MarqueeItem } from "../ui/marquee";
 import { SlideUpSection } from "../layout/SlideUpSection";
 
 const services = [
@@ -260,19 +260,17 @@ export function HomeSection() {
                     </div>
                     <div className="bg-[#00763B] pt-16 pb-30 flex flex-col w-full gap-12 items-center">
                         <h2 className="text-center text-foreground opacity-50 text-xs">ĐỐI TÁC DOANH NGHIỆP</h2>
-                        <ScrollVelocity
-                            texts={[
-                                <span key="brands" className="flex items-center gap-24 opacity-40">
-                                    {brands.map((brand) => (
-                                        <Image key={brand} src={`/images/homepage/${brand}`} alt={brand} width={120} height={40} className="object-contain h-10 w-auto" />
-                                    ))}
-                                </span>
-                            ]}
-                            velocity={50}
-                            numCopies={4}
-                            damping={50}
-                            stiffness={400}
-                        />
+                        <Marquee autoFill>
+                            <MarqueeContent className="gap-[96px]">
+                                {brands.map((brand) => (
+                                    <MarqueeItem key={brand}>
+                                        <Image src={`/images/homepage/${brand}`} alt={brand} width={120} height={40} className="object-contain h-10 w-auto opacity-40" />
+                                    </MarqueeItem>
+                                ))}
+                            </MarqueeContent>
+                            {/* <MarqueeEdge side="left" />
+                            <MarqueeEdge side="right" /> */}
+                        </Marquee>
                     </div>
                 </div>
             </SlideUpSection>

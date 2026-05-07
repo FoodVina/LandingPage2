@@ -14,7 +14,6 @@ export default async function HomePage({
       <div className="w-full">
         <HomeSection />
       </div>
-      
     </div>
   );
 }

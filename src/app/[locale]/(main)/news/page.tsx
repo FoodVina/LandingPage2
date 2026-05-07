@@ -1,5 +1,6 @@
 import { createServerTranslator } from "@/i18n/serverUtils";
 import { Locale } from "@/i18n/config";
+import { NewsSection } from "@/components/sections/NewsSection";
 
 export default async function NewsPage({
     params
@@ -10,10 +11,8 @@ export default async function NewsPage({
 
     return (
         <div>
-            <div className="container mx-auto px-4">
-                This is news page
-                <p>{t("hello", "common")}</p>
-                <p>{t("welcome", "common")}</p>
+            <div className="w-full">
+                <NewsSection />
             </div>
         </div>
     );

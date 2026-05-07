@@ -110,10 +110,10 @@ export const AboutSection = () => {
                     </div>
                     <div className="container mx-auto px-4 relative z-1 grid grid-cols-2 h-full ">
                         <div className="h-full flex items-end py-16">
-                            <h2 className="font-(family-name:--font-noto-serif) text-[40px]">Giá trị</h2>
+                            <h2 className="font-(family-name:--font-noto-serif) text-[67px]">Giá trị</h2>
                         </div>
                         <div className="p-16 flex flex-col gap-8">
-                            <h2 className="font-(family-name:--font-noto-serif) text-[67px]">Hương vị và chất lượng tốt hơn, Sức khỏe và Hạnh phúc, Thách thức và Đổi mới, Cùng nhau phát triển.</h2>
+                            <h2 className="font-(family-name:--font-noto-serif) text-[40px]">Hương vị và chất lượng tốt hơn, Sức khỏe và Hạnh phúc, Thách thức và Đổi mới, Cùng nhau phát triển.</h2>
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ export const AboutSection = () => {
                             <div className="relative z-1 flex flex-col gap-6">
                                 <p className="font-bold text-sm text-secondary">TRIẾT LÝ KINH DOANH</p>
                                 <h2 className="font-(family-name:--font-noto-serif) text-[40px]">
-                                    "Trách nhiệm và Tin cậy, Thách thức và Cải tiến, Quan tâm và Phụng sự - Mang lại sự hài lòng nhất và chất lượng tốt nhất"
+                                    &quot;Trách nhiệm và Tin cậy, Thách thức và Cải tiến, Quan tâm và Phụng sự - Mang lại sự hài lòng nhất và chất lượng tốt nhất&quot;
                                 </h2>
                             </div>
                             <Image alt="philosophy" src={`/images/aboutpage/philosophy.png`} width={2000} height={2000} className="w-full" />
@@ -134,9 +134,9 @@ export const AboutSection = () => {
                     </div>
                     <div className="flex flex-col gap-4 pt-[96px] pl-16">
                         <p>
-                            Được thành lập từ năm 2015 dựa trên tinh thần "Đức tin và Yêu thương", với sự đồng lòng phụng sự của toàn thể đội ngũ nhân viên, FOOD VINA hiện đã bước sang năm thứ 11 hoạt động. Chúng tôi tự hào là đơn vị tiên phong trong lĩnh vực cung cấp suất ăn công nghiệp tại các khu vực: Vĩnh Phúc, Phú Thọ, Hòa Bình, Hưng Yên, Hải Dương, Hải Phòng, Bắc Ninh và Bắc Giang.
+                            Được thành lập từ năm 2015 dựa trên tinh thần &quot;Đức tin và Yêu thương&quot;, với sự đồng lòng phụng sự của toàn thể đội ngũ nhân viên, FOOD VINA hiện đã bước sang năm thứ 11 hoạt động. Chúng tôi tự hào là đơn vị tiên phong trong lĩnh vực cung cấp suất ăn công nghiệp tại các khu vực: Vĩnh Phúc, Phú Thọ, Hòa Bình, Hưng Yên, Hải Dương, Hải Phòng, Bắc Ninh và Bắc Giang.
                             <br /><br />
-                            Với triết lý doanh nghiệp: "Trách nhiệm và Tin cậy, Thách thức và Cải tiến, Quan tâm và Phụng sự - Mang lại sự hài lòng nhất và chất lượng tốt nhất", toàn thể cán bộ công nhân viên công ty đã nỗ lực hết mình với thái độ làm việc tận tâm. Kết quả là hiện nay, chúng tôi đang cung cấp dịch vụ suất ăn tập thể cho 50.000 người mỗi ngày.
+                            Với triết lý doanh nghiệp: &quot;Trách nhiệm và Tin cậy, Thách thức và Cải tiến, Quan tâm và Phụng sự - Mang lại sự hài lòng nhất và chất lượng tốt nhất&quot;, toàn thể cán bộ công nhân viên công ty đã nỗ lực hết mình với thái độ làm việc tận tâm. Kết quả là hiện nay, chúng tôi đang cung cấp dịch vụ suất ăn tập thể cho 50.000 người mỗi ngày.
                             <br /><br />
                             Bước sang cột mốc 11 năm thành lập, với sứ mệnh và niềm tự hào trong việc kiến tạo một nền văn hóa ẩm thực đúng đắn, lấy khách hàng và sức khỏe làm trọng tâm, chúng tôi luôn giữ vững những giá trị cơ bản nhất. Bằng sự chăm chút và tận tâm để quyết định nên hương vị và chất lượng, FOOD VINA đang nỗ lực xây dựng một doanh nghiệp bảo vệ sức khỏe và giá trị của khách hàng thông qua những nguyên liệu tươi sạch kết hợp cùng sự tinh tế trong chế biến.
                             <br /><br />

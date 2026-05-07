@@ -1,5 +1,6 @@
 import { createServerTranslator } from "@/i18n/serverUtils";
 import { Locale } from "@/i18n/config";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 export default async function ContactPage({
     params
@@ -10,10 +11,8 @@ export default async function ContactPage({
 
     return (
         <div>
-            <div className="container mx-auto px-4">
-                This is contact page
-                <p>{t("hello", "common")}</p>
-                <p>{t("welcome", "common")}</p>
+            <div className="w-full">
+                <ContactSection />
             </div>
         </div>
     );

@@ -188,7 +188,7 @@ export const DyFoodSection = () => {
 
                 <ValueCarousel />
 
-                <div className="h-dvh relative">
+                <div className="min-h-dvh relative">
                     <div className="absolute inset-0 h-full w-full grid grid-cols-2" >
                         <div className="bg-no-repeat bg-center bg-cover h-full w-full " style={{ backgroundImage: "url('/images/dyfoodpage/contact.png')" }} />
                         <div className="absolute inset-0 bg-background/50" />
